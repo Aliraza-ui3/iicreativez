@@ -1,0 +1,25 @@
+/* Footer.css */
+.footer {
+    background-color: #a30000;
+    color: white;
+  }
+  
+  .footer .border-bottom {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .footer .text-reset {
+    color: white !important;
+  }
+  
+  .footer .p-4 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer a,
+  .footer p,
+  .footer h6,
+  .footer span {
+    color: white !important;
+  }
+  
