@@ -1,33 +1,51 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Container } from 'react-bootstrap';
-import './Card.css';
+import Card1 from '../assets/5.jpg';
+import Card2 from '../assets/6.jpg';
+import { Container, Row, Col } from 'react-bootstrap';
 
-const Slideshow = () => {
+function CardComponent() {
   return (
-    <Container className="my-3">
-      <div className="intro-container">
-        <h1 className='my-4 fw-bold text-center'>Our Motto</h1>
-        <div className="slideshow-container">
-          <Carousel showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={true} interval={3000}>
-            <div>
-              <img src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="Slide 1" />
-              <p className="legend">Creativity</p>
+    <Container className="my-5">
+      <Row className="justify-content-center">
+        <Col lg={4} md={6} sm={12} className="mb-4">
+          <div className="card" style={{ width: '18rem' }}>
+            <img className="card-img-top" src={Card2} alt="Card image cap" />
+            <div className="card-body">
+              <h5 className="card-title">Founder</h5>
+              <p className="card-text">
+              John Doe is a visionary entrepreneur with over 20 years of experience in the tech industry. His passion for innovation and excellence laid the foundation for our company, driving us to the forefront of digital transformation.
+              </p>
+              <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
-            <div>
-              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2plY3R8ZW58MHx8MHx8fDA%3D" alt="Slide 2" />
-              <p className="legend">Project Management</p>
+          </div>
+        </Col>
+        <Col lg={4} md={6} sm={12} className="mb-4">
+          <div className="card" style={{ width: '18rem' }}>
+            <img className="card-img-top" src={Card1} alt="Card image cap" />
+            <div className="card-body">
+              <h5 className="card-title">CEO</h5>
+              <p className="card-text">
+              Jane Smith is a dynamic leader known for her strategic vision and commitment to customer success. With a track record of driving growth and innovation, she guides our company towards achieving new heights.
+              </p>
+              <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
-            <div>
-              <img src="https://images.unsplash.com/photo-1569098644584-210bcd375b59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2plY3R8ZW58MHx8MHx8fDA%3D" alt="Slide 3" />
-              <p className="legend">Team Work</p>
+          </div>
+        </Col>
+        <Col lg={4} md={6} sm={12} className="mb-4">
+          <div className="card" style={{ width: '18rem' }}>
+            <img className="card-img-top" src={Card2} alt="Card image cap" />
+            <div className="card-body">
+              <h5 className="card-title">CTO</h5>
+              <p className="card-text">
+              Emily Johnson is a tech-savvy innovator with a deep understanding of emerging technologies. Her expertise in software development and cybersecurity ensures our solutions are both cutting-edge and secure.
+              </p>
+              <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
-          </Carousel>
-        </div>
-      </div>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 }
 
-export default Slideshow;
+export default CardComponent;

@@ -1,7 +1,9 @@
-body {
-  background-color: #d3d3d3;
-}
-
 .container {
   padding: 20px;
+}
+body {
+  background-image: url('../src/assets/7.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
 }

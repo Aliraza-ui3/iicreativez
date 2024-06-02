@@ -1,23 +1,32 @@
 import React from 'react';
-import './Intro.css'; 
-import { Container } from 'react-bootstrap';
+import Slider1 from '../assets/1.jpg';
+import Slider2 from '../assets/2.jpg';
+import Slider3 from '../assets/3.jpg';
+import './Intro.css';
 
-const Intro = () => {
+function Intro() {
   return (
-    <Container className="my-3">
-    <div className="intro-container">
-    <h1 className='my-4 fw-bold'>Introduction</h1>
-      <p className="intro-text">
-        We are a leading IT company dedicated to delivering innovative solutions that empower businesses and individuals alike. With a team of skilled professionals and cutting-edge technologies, we strive to exceed expectations and drive digital transformation.
-      </p>
-      <p className="intro-text">
-        Our services range from web and mobile app development to cloud solutions and cybersecurity. We combine creativity, technical expertise, and industry insights to create tailored solutions that address your unique challenges and goals.
-      </p>
-      <p className="intro-text">
-        Whether you're a startup looking to establish your online presence or an enterprise seeking scalable solutions, we are here to help you succeed in today's digital landscape.
-      </p>
+    <div id="carouselExample" className="carousel slide">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img src={Slider1} className="d-block w-100" alt="First slide" />
+        </div>
+        <div className="carousel-item">
+          <img src={Slider2} className="d-block w-100" alt="Second slide" />
+        </div>
+        <div className="carousel-item">
+          <img src={Slider3} className="d-block w-100" alt="Third slide" />
+        </div>
+      </div>
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
     </div>
-    </Container>
   );
 }
 
