@@ -8,6 +8,7 @@ import Form from './components/Form';
 import Footer from './components/Footer';
 import Test from './components/Testimonial';
 import Serve from './components/Services';
+import Pro from './components/Products';
 import './App.css';
 
 
@@ -19,6 +20,7 @@ function App() {
         <Card />
         <Test/>
         <Serve/>
+        <Pro/>
         <About/>
         <Form />
         <Footer />

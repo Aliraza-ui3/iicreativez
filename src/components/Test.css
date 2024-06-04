@@ -39,8 +39,8 @@ body::-webkit-scrollbar {
 
 .testimonials-section {
   margin: 0 auto;
-  margin-top: 12.692rem;
-  margin-bottom: 12.692rem;
+  margin-top: 3.692rem;
+  margin-bottom: 3.692rem;
   max-width: 77.083%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

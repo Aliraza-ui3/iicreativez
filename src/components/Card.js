@@ -18,8 +18,9 @@ function CardComponent() {
       <div className="award-recognition">
         <h5>Since 2016 we are growing</h5>
       </div>
+      <div class="row py-4">
       <Row className="justify-content-center">
-        <Col lg={4} md={6} sm={12} className="mb-4">
+        <Col lg={3} md={6} sm={12} className="mb-4">
           <div className="card" style={{ width: '18rem' }}>
             <img className="card-img-top" src={Card2} alt="Card image cap" />
             <div className="card-body">
@@ -27,7 +28,7 @@ function CardComponent() {
             </div>
           </div>
         </Col>
-        <Col lg={4} md={6} sm={12} className="mb-4">
+        <Col lg={3} md={6} sm={12} className="mb-4">
           <div className="card" style={{ width: '18rem' }}>
             <img className="card-img-top" src={Card1} alt="Card image cap" />
             <div className="card-body">
@@ -35,7 +36,7 @@ function CardComponent() {
             </div>
           </div>
         </Col>
-        <Col lg={4} md={6} sm={12} className="mb-4">
+        <Col lg={3} md={6} sm={12} className="mb-4">
           <div className="card" style={{ width: '18rem' }}>
             <img className="card-img-top" src={Card3} alt="Card image cap" />
             <div className="card-body">
@@ -43,9 +44,16 @@ function CardComponent() {
             </div>
           </div>
         </Col>
-        
+        <Col lg={3} md={6} sm={12} className="mb-4">
+          <div className="card" style={{ width: '18rem' }}>
+            <img className="card-img-top" src={Card3} alt="Card image cap" />
+            <div className="card-body">
+            
+            </div>
+          </div>
+        </Col>
       </Row>
-      
+      </div>
     </Container>
     
   );
