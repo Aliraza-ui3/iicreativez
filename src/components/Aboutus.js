@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import AboutImage from '../assets/4.jpg';
+import AboutImage from '../assets/ceo.jpg';
 
 function Home() {
   return (
     <div>
-      <div className="container">
+      <div className="container" id="about">
         <Container className="my-3">
           <Row className="mx-2 align-items-center">
             <Col lg={6} md={6} sm={12}>

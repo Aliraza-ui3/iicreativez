@@ -1,21 +1,29 @@
 import React from 'react';
-import Card1 from '../assets/5.jpg';
-import Card2 from '../assets/6.jpg';
+import Card1 from '../assets/12.png';
+import Card2 from '../assets/11.png';
+import Card3 from '../assets/13.png';
 import { Container, Row, Col } from 'react-bootstrap';
+import './Card.css';
 
 function CardComponent() {
   return (
+    
     <Container className="my-5">
+      <div className="award-recognition">
+        <h1>AWARD AND RECOGNITION</h1>
+      </div>
+      <div className="award-recognition">
+        <h3>We are an Award-Winning IT services company in Pakistan</h3>
+      </div>
+      <div className="award-recognition">
+        <h5>Since 2016 we are growing</h5>
+      </div>
       <Row className="justify-content-center">
         <Col lg={4} md={6} sm={12} className="mb-4">
           <div className="card" style={{ width: '18rem' }}>
             <img className="card-img-top" src={Card2} alt="Card image cap" />
             <div className="card-body">
-              <h5 className="card-title">Founder</h5>
-              <p className="card-text">
-              John Doe is a visionary entrepreneur with over 20 years of experience in the tech industry. His passion for innovation and excellence laid the foundation for our company, driving us to the forefront of digital transformation.
-              </p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+             
             </div>
           </div>
         </Col>
@@ -23,28 +31,23 @@ function CardComponent() {
           <div className="card" style={{ width: '18rem' }}>
             <img className="card-img-top" src={Card1} alt="Card image cap" />
             <div className="card-body">
-              <h5 className="card-title">CEO</h5>
-              <p className="card-text">
-              Jane Smith is a dynamic leader known for her strategic vision and commitment to customer success. With a track record of driving growth and innovation, she guides our company towards achieving new heights.
-              </p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+             
             </div>
           </div>
         </Col>
         <Col lg={4} md={6} sm={12} className="mb-4">
           <div className="card" style={{ width: '18rem' }}>
-            <img className="card-img-top" src={Card2} alt="Card image cap" />
+            <img className="card-img-top" src={Card3} alt="Card image cap" />
             <div className="card-body">
-              <h5 className="card-title">CTO</h5>
-              <p className="card-text">
-              Emily Johnson is a tech-savvy innovator with a deep understanding of emerging technologies. Her expertise in software development and cybersecurity ensures our solutions are both cutting-edge and secure.
-              </p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+            
             </div>
           </div>
         </Col>
+        
       </Row>
+      
     </Container>
+    
   );
 }
 

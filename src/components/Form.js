@@ -1,38 +1,135 @@
-import React from 'react';
-import { Form, Button, Container } from 'react-bootstrap';
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import img3 from '../assets/UnderLine.png';
 
-function BasicExample() {
+export default function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+
+  // Log state changes
+  const logMessageDetails = () => {
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Phone:', phone);
+    console.log('Message:', message);
+  };
+
+  // Handle input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    switch (name) {
+      case 'name':
+        setName(value);
+        break;
+      case 'email':
+        setEmail(value);
+        break;
+      case 'phone':
+        setPhone(value);
+        break;
+      case 'message':
+        setMessage(value);
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
-    <Container className="my-3">
-      <div className="intro-container">
-        <h1 className='my-4 fw-bold'>Contact Us</h1>
-        <div className="container">
-          <Form className="my-5">
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
+    <>
+      <div className="container" id="contact">
+        <p> Contact us </p>
+      </div>
+      <div className="my-5 container">
+        <div className="row">
+          <div className="my-3 col-lg-4">
+            <p className="fw-bold">
+              Call to us
+            </p>
+            <p className="fw-bold mx-3">
+              we are available 24/7, 7 days a week <br />
+              phone: +1 234 567 89 00
+            </p>
 
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
+            <img className="my-3 mx-2" src={img3} alt="Underline" />
 
-            <Form.Group controlId="formBasicCheckbox" className="mb-3">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
+            <p className="fw-bold">
+              Write to us
+            </p>
 
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </Form>
+            <p className=" fw-bold mx-3">
+              Fill out the form and we will contact you <br />
+              within 24 hours
+              <br />
+              Email: Icreativez@gmail.com
+            </p>
+          </div>
+          <div className="my-4 col-lg-8">
+            <div className="row">
+              <div className="col-lg-4">
+                <input
+                  style={{ background: '#F5F5F5', border: 'none' }}
+                  className="form-control"
+                  type="text"
+                  placeholder="Your name"
+                  name="name"
+                  value={name}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="col-lg-4">
+                <input
+                  style={{ background: '#F5F5F5', border: 'none' }}
+                  className="form-control"
+                  type="email"
+                  placeholder="Your email"
+                  name="email"
+                  value={email}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="col-lg-4">
+                <input
+                  style={{ background: '#F5F5F5', border: 'none' }}
+                  className="form-control"
+                  type="number"
+                  placeholder="Your phone"
+                  name="phone"
+                  value={phone}
+                  onChange={handleInputChange}
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="my-4 col-lg-12">
+                <textarea
+                  style={{ background: '#F5F5F5', border: 'none' }}
+                  type="textarea"
+                  className="form-control "
+                  name="message"
+                  id=""
+                  cols="103"
+                  rows="10"
+                  placeholder="Your message"
+                  value={message}
+                  onChange={handleInputChange}
+                ></textarea>
+              </div>
+              <div className="col-lg-12 justify-content-end d-flex">
+                <Button
+                  style={{ width: '270px', fontSize: '18px', borderRadius: '0px' }}
+                  className="gradient-container"
+                  onClick={logMessageDetails}
+                >
+                  Send Message
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div> {/* Closing div for intro-container */}
-    </Container>
+      </div>
+    </>
   );
 }
-
-export default BasicExample;

@@ -1,15 +1,21 @@
-/* Add this to your CSS file, e.g., Navbar.css */
-.brand-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #a30000; /* Change this to the desired color */
-  }
-  .nav-link-custom {
-    font-family: 'Arial, sans-serif'; /* Change this to the desired font */
-    font-size: 1.2rem; /* Adjust the font size as needed */
-    color: #555; /* Initial color */
-  }
-  
-  .nav-link-custom:hover {
-    color: #000; /* Hover color */
-  }
+.navbar-brand-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav.navbar{
+  padding: 0px 0;
+  background-color: #920000;
+}
+nav.navbar a.navbar-brand {
+    width: 9%;
+}
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 800;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
