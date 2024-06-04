@@ -14,7 +14,7 @@ const Services = () => {
                         </div>
                         <div className="service-title"> Web Development </div>
                         <div className="service-desc">
-                           Here's a description of the Service Name 
+                           We have world class website developers, your website will work smooth with aesthetic looks 
                         </div>
                     </div>
     
@@ -25,7 +25,7 @@ const Services = () => {
                         </div>
                         <div className="service-title"> Software Quality Assuarance </div>
                         <div className="service-desc">
-                            Here's a description of the Service Name
+                            To improve the Quality of your software making sure it doesn't fail when you need it
                         </div>
                     </div>
     
@@ -36,7 +36,7 @@ const Services = () => {
                         </div>
                         <div className="service-title"> SEO Services </div>
                         <div className="service-desc">
-                            Here's a description of the Service Name 
+                            Your site or blog will rank among top 10  
                         </div>
                     </div>
     
@@ -47,7 +47,7 @@ const Services = () => {
                         </div>
                         <div className="service-title"> Blog Writting </div>
                         <div className="service-desc">
-                            Here's a description of the Service Name 
+                            creative writing making your imagination alive with words 
                         </div>
                     </div>
     
@@ -58,7 +58,7 @@ const Services = () => {
                         </div>
                         <div className="service-title"> Machine Learning </div>
                         <div className="service-desc">
-                            Here's a description of the Service Name 
+                            train any model to help escalatae your task  
                         </div>
                     </div>
     
@@ -69,7 +69,7 @@ const Services = () => {
                         </div>
                         <div className="service-title"> Software Development </div>
                         <div className="service-desc">
-                            Here's a description of the Service Name  
+                            to develop software according your requirements with suggestions and guide  
                         </div>
                     </div>
     
